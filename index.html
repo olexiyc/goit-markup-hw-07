@@ -24,23 +24,88 @@
                             <a class="nav-link" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item">
                             <a class="nav-link" href="Contacts">Contacts</a></li> 
-                       
-                        <li class="social-item">
+                    </ul>
+                </nav>
+
+                    <ul class="mobile-phone-mail-list">   
+                        <li class="">
                             <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com </a>
                         </li>
-                        <li class="social-item">
-                            <a class="tel" href="tel:+1(000)111-11-11">1 (000) 111-11-11</a>
+                        <li class="">
+                            <a class="tel" href="tel:+1(000)111-11-11">+11 (000) 111-11-11</a>
                         </li>
                     </ul>
-            </nav>
-            <button type="button" class="mobile-menu-open" >
+            
+
+            <button type="button" class="mobile-menu-open js-open-menu" js-open-menu >
                 <svg class="mobile-menu-open_icon" width="32" height="22" >
                     <use href="./images/sprite.svg#icon-hamburger-menu"></use>
                 </svg>
             </button>
-    </div>
+        </div>
+
+        <div class="mobile-menu js-menu-container" js-menu-container>
+            <div class="container mobile-menu-container">
+            <button class="mobile-menu_close-btn js-close-menu"  js-close-menu>
+                <svg class="mobile-menu_close-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-Vector-7"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu-nav-list">
+                <li class="mobile-menu-nav-item">
+                    <a class="mobile-menu-nav-link active" href="index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="mobile-menu-nav-item">
+                    <a class="nav-link" href="Contacts">Contacts</a></li> 
+            </ul>
+            <div>
+                    <a class="tel-mobile-menu" href="tel:+1(000)111-11-11">1 (000) 111-11-11</a>
+            </div>
+    
+            <div class="mail-mobile-menu-div">
+                    <a class="mail-mobile-menu" href="mailto:info@devstudio.com">info@devstudio.com </a>
+            </div>
+            
+                
+                <ul class="titletext list">
+                    <li class="titletext-svg">
+                        <a class="link titletext-link" href="">
+                            <svg class="contact-svg-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="titletext-svg">
+                        <a class="link titletext-link" href="">
+                            <svg class="contact-svg-icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="titletext-svg">
+                        <a class="link titletext-link" href="">
+                            <svg class="contact-svg-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="titletext-svg">
+                        <a class="link titletext-link" href="">
+                            <svg class="contact-svg-icon">
+                                <use href="./images/sprite.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </ul>
+            </div>
+        </div>
 </header>
-        <!-- <main>
+        <main>
             <section class="hero-fon">
                 <div class="container">
 
@@ -49,7 +114,7 @@
                     <button data-modal-open  type="button" class="herobutton">Order Services</button>
                         
                 </div>
-            </section>  -->
+            </section> 
 
 <!-- <section class="section-goals">
     <div class="container">
@@ -436,5 +501,6 @@
             
           </div>
           <script src="./js/modal.js"></script> -->
-    </body>
+          <script src="./js/mobile-menu.js"></script>
+        </body>
 </html>
