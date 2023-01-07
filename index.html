@@ -99,24 +99,29 @@
                             </svg>
                         </a>
                     </li>
-                </ul>
-
+                </ul> 
+            
             </ul>
             </div>
         </div>
 </header>
+
+<!-- HERO FON -->
+
         <main>
             <section class="hero-fon">
                 <div class="container">
 
-                    <h1 class="main-title">Effective Solutions for Your Business</h1>   
+                    <h1 class="main-title">Effective Solutions For Your Business</h1>   
                    
                     <button data-modal-open  type="button" class="herobutton">Order Services</button>
                         
                 </div>
             </section> 
 
-<!-- <section class="section-goals">
+<!-- GOALS -->
+
+ <section class="section-goals">
     <div class="container">
         <ul class="container-goals">
            <li class="flex-container-text">
@@ -157,9 +162,11 @@
             </li>
         </ul> 
     </div>   
-</section> --> 
+</section> 
 
-<!-- <section class="menuimage">
+<!-- MENU IMAGE -->
+
+<section class="menuimage">
     <div class="container">
         <h2 class="second-title">What are we doing</h2>
             <ul class="image-set">
@@ -171,9 +178,11 @@
                     <img src="images/photo2.jpg" alt="laptop" width="360" height="300"></li>
             </ul>
         </div>
-</section> -->
+</section> 
 
-<!-- <section class="section-workers">   
+<!-- WORKERS OUR TEAM -->
+
+<section class="section-workers">   
 <div class="container">
     <h2 class="our-team">Our Team</h2>
         <ul class="worker-set">
@@ -211,9 +220,9 @@
                         </a>
                     </li>
                 </ul>
-            </li> -->
+            </li> 
 
-            <!-- <li class="worker-item">
+            <li class="worker-item">
                 <img src="images/img2.jpg" alt="Tom Ford" width="264" height="260">
                 <h3 class="worker">Tom Ford</h3>
                 <p class="position">Frontend Developer</p>
@@ -247,9 +256,9 @@
                         </a>
                     </li>
                 </ul>
-            </li> -->
+            </li> 
 
-            <!-- <li class="worker-item">
+            <li class="worker-item">
                 <img src="images/img3.jpg" alt="Camila Garcia" width="264" height="260">
                 <h3 class="worker">Camila Garcia</h3>
                 <p class="position">Marketing</p>
@@ -283,9 +292,9 @@
                         </a>
                     </li>
                 </ul>
-            </li> -->
+            </li>
 
-            <!-- <li class="worker-item">
+            <li class="worker-item">
                 <img src="images/img4.jpg" alt="Daniel Wilson" width="264" height="260">
                 <h3 class="worker">Daniel Wilson</h3>
                 <p class="position">UI Designer</p>
@@ -322,7 +331,7 @@
             </li>
         </ul>
     </div>
-</section> -->
+</section> 
 
 <!-- <section class="section-customer">
     <div class="container">
@@ -498,9 +507,77 @@
                 </svg>
               </button>
             </div>
-            
-          </div>
-          <script src="./js/modal.js"></script> -->
+          </div> -->
+
+          <!-- Order Service  form -->
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                
+                <form>
+                    <p class="contact-text-one">Leave your contacts and we will call you back</p>
+                    <div class="inputs"> 
+                        <label class="contact-form-one">
+                        <p class="text-form">Name</p>
+                        <input 
+                            class="contact-form-modal name" 
+                            type="Name" 
+                            name="user_name" 
+                            required
+                            autocomplete="off">
+                                <svg class="form-icon person-icon">
+                                    <use href="./images/sprite.svg#icon-Vector-4"></use>
+                                </svg>
+                        </label>
+
+                        <label class="contact-form-one">
+                        <p class="text-form">Phone</p>
+                        <input 
+                        class="contact-form-modal phone" 
+                        type="Phone" 
+                        name="user_phone"
+                        autocomplete="off">
+                            <svg class="form-icon phone-icon">
+                                <use href="./images/sprite.svg#icon-Vector-5"></use>
+                            </svg>
+                        </label>
+
+                        <label class="contact-form-one">
+                        <p class="text-form">Email</p>
+                        <input 
+                        class="contact-form-modal email" 
+                        type="Name" 
+                        name="user_name" 
+                        required
+                        autocomplete="off">
+                            <svg class="form-icon email-icon">
+                                <use href="./images/sprite.svg#icon-Vector-6"></use>
+                            </svg>
+                        </label>
+
+                        <p class="text-form">Comment</p>
+                        <textarea class="contact-form-message" placeholder="Text input"></textarea>
+                        
+                    </label>
+                    </div>
+                    <label class="contact-form-fieldset">
+                        <input 
+                        type="checkbox" 
+                        class="checkbox-hidden"
+                        name="policy-accept-checkbox">
+                        <span class="checkbox"></span>
+                        <p class="checkbox-text">I accept the terms and conditions of the <a class="policy-link" href="#">Privacy Policy</a></p>
+                    </label>
+                    <button class="send">Send</button>
+                </form>
+              <button type="button" class="button-close" data-modal-close>
+                <svg class="icon-close" width="8" height="8">
+                  <use href="./images/sprite.svg#icon-Vector-3-1"></use>
+                </svg>
+              </button>
+            </div>
+
+          <script src="./js/modal.js"></script>
           <script src="./js/mobile-menu.js"></script>
         </body>
 </html>
