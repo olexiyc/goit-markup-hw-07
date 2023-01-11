@@ -54,7 +54,7 @@ body{
 
 @media screen and (min-width: 1200px) {
     .container{
-        width: 1200px;
+        width: 1158px;
     }
 }
 
@@ -90,9 +90,7 @@ body{
     .socail-items-mobile-menu{
         margin-top: 244px;
         margin-bottom: 48px;
-        
-        
-    }
+    }  
     
     .mail-mobile-menu{
     font-family: 'Roboto';
@@ -199,7 +197,7 @@ body{
 .mobile-menu{
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: auto;
         top: 0;
         left: 0;
         background-color: #FFFFFF;
@@ -223,7 +221,8 @@ body{
     }
     
     .mobile-menu-container{
-        
+        width: 100%;
+        height: 100%;
         padding-top: 80px;
         padding-bottom: 40px;
         padding-left: 20px;
@@ -550,6 +549,10 @@ body{
     .title{
         padding-bottom: 8px;
     }
+    .text{
+        text-align: left;
+    }
+    
     
 }
 
@@ -569,6 +572,9 @@ body{
     }
     .flex-container-text:nth-child(2n+1){
         padding-bottom: 72px;
+    }
+    .text{
+
     }
     
 }
@@ -802,13 +808,14 @@ body{
 
 @media screen and (min-width:768px) and (max-width:1199px) {
     .worker-set{
-        column-count: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
-        display: block;
 
     }
-    .worker-item:nth-child(2n+1){
-        margin-bottom: 56px;
+    .worker-item:nth-child(){
+        padding-bottom: 56px;
         
     }
     .worker-item{
@@ -817,8 +824,7 @@ body{
     .section-workers{
         padding-top: 96px;
         padding-bottom: 96px;
-        padding-left: 55px;
-        padding-right: 55px;
+        
     }
 }
 
@@ -885,27 +891,30 @@ body{
     transition: 0.3s;
     
 }
+/* Customer Mobile Styles */
 
 @media screen and (max-width:767px) {
     .customer-list{
-        display: block;
-        column-count: 2;
+        display: flex;
+        flex-wrap: wrap;
         
     }
-    .customer-border{
-        padding-bottom: 72px;
+    
+    .customer-border:nth-child(-n+4){
+        padding-bottom: 48px;
     }
-    .customer-border:nth-child(3n+3){
-        padding-bottom: 0;
-    }
+    
 }
+
+/* CUSTOMER TABLET Styles */
+
 @media screen and (min-width:768px) and (max-width:1199px) {
     .customer-list{
-        display: block;
-        column-count: 3;
+        display: flex;
+        flex-wrap: wrap;
     }
-    .customer-border:nth-child(odd){
-        padding-bottom: 72px;
+    .customer-border:nth-child(-n+3){
+        padding-bottom: 48px;
     }
 }
 /* FOOTER Styles */
@@ -1022,10 +1031,12 @@ transition: 0.2s;
     }
     .footer-text-logo{
         margin-bottom: 72px;
+
         
     }
     .webstudio-footer{
         display: block;
+        line-height: 21px;
     }
     .footer-social-list{
         justify-content:center;
@@ -1033,11 +1044,11 @@ transition: 0.2s;
         
        
     }
-    .text-footer{
-        text-align: left;
+    .text-footer{display: block;
         justify-content: center;
-        width: 100%;
         align-items: center;
+        width: 100%;
+        text-align: left;
         
     }
 }
@@ -1639,14 +1650,14 @@ color: #FFFFFF;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .policy-link{
-    text-decoration: underline;
-    color: #4D5AE5;
-  } */
+   */
 
 
   /* Order Service button form */
-
+  .policy-link{
+    text-decoration: underline;
+    color: #4D5AE5;
+  } 
   
 .backdrop {
     position: fixed;
@@ -1883,6 +1894,35 @@ color: #8E8F99;
     fill: #FFFFFF;
     
 }
+
+.checkbox {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #343eb6;
+    border-radius: 2px;
+    
+    cursor: pointer;
+    display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .checkbox-hidden {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    
+  }
+  
+  .checkbox-hidden:checked + .checkbox {
+    background-color: #4D5AE5;
+    background-image: url(../images/icons.svg/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
